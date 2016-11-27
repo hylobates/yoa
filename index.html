@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OYA">
+    <meta name="author" content="Gu">
+	<title>OYA</title>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="libs/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/plugin/Swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/style/scss/index.css">
+
+	<!-- js -->
+	<script type="text/javascript" src="libs/plugin/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="libs/plugin/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/plugin/Swiper/dist/js/swiper.min.js"></script>
+	<script type="text/javascript" src="libs/plugin/jquery_lazyload/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="libs/plugin/iscroll/build/iscroll.js"></script>
+	<script type="text/javascript" src="libs/JavaScript/index.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<header class="index-header">
+		<div class="index-logo gu-cen">
+			<a class="gu-cen" href="index.html">OYA商城</a>
+		</div>
+		<form class="text-right" role="form">
+			<button id="index-search" type="button" class="btn btn-default btn-lg btn-dm btn-link" style="color: #fff">
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+		</form>
+	</header>
+	<!-- 搜索界面 -->
+	<div class="search-page">
+		<header class="index-header">
+			<div class="index-logo gu-cen">
+				<a class="gu-cen" href="index.html">商品搜索</a>
+			</div>
+			<form class="text-right" role="form">
+				<button id="close-search" type="button" class="btn btn-default btn-lg btn-dm btn-link" style="color: #fff">
+					<span class="glyphicon glyphicon-remove"></span>
+				</button>
+			</form>
+		</header>
+		<div class="text-search">
+			<div class="input-group">
+			  <span class="input-group-btn">
+			  	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+			  </span>
+			  <input type="text" class="form-control">
+			 <span class="input-group-btn">
+			  	<button class="btn btn-default" type="button">搜索</button>
+			  </span>
+			</div>
+		</div>
+	</div>
+
+	<!-- body -->
+	<div class="index-body" id="wrapper">
+		<div class="index-main">
+				<!-- 轮播图 -->
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="libs/images/1.jpg"></div>
+		            <div class="swiper-slide"><img src="libs/images/2.jpg"></div>
+		            <div class="swiper-slide"><img src="libs/images/3.jpg"></div>
+		        </div>
+		        <div class="swiper-pagination"></div>
+		    </div>
+		    <!-- 图片列表 -->
+		    <div class="container-fluid index-panel">
+		    	<!-- 精选列表 -->
+		    	<div class="row pic-title">
+		    		<div class="col-xs-12">
+		    			<img src="libs/images/41.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row role-pic">
+		    		<div class="col-xs-12">
+		    			<img src="libs/images/31.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-list">
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/27.jpg">
+		    		</div>
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/28.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-list">
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/29.jpg">
+		    		</div>
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/30.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-list">
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/32.jpg">
+		    		</div>
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/33.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-list">
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/34.jpg">
+		    		</div>
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/35.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-list">
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/36.jpg">
+		    		</div>
+		    		<div class="col-xs-6">
+		    			<img src="libs/images/37.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row pic-li">
+		    		<div>
+		    			<img src="libs/images/50.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div>
+		    			<img src="libs/images/51.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div>
+		    			<img src="libs/images/52.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div>
+		    			<img src="libs/images/53.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div>
+		    			<img src="libs/images/26.jpg">
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/5.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>拱辰享雪美白精华套装</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/6.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/7.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/5.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>拱辰享雪美白精华套装</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/6.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/7.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/5.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>拱辰享雪美白精华套装</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/6.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    	<div class="row index-theme">
+		    		<div class="col-xs-12">
+		    			<img class="lazy" data-original="libs/images/7.jpg" src="libs/images/loading/1392662628672.gif">
+		    		</div>
+		    		<div class="col-xs-8">
+		    			<p>津率享红华凝香平衡液 150ml</p>
+		    			<b>¥</b><span>120</span>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<a id="go-Up" href="#"><span class="glyphicon glyphicon-circle-arrow-up go-Up"></span></a>
+	</div>
+	<!-- footer -->
+	<nav class="index-footer">
+		<ul class="footer-nav elaBox" role="nav">
+			<li role="button" class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+			<li role="" class=""><a href="#"><span class="glyphicon glyphicon-align-justify"></span>积分区</a></li>
+			<li role="button" class=""><a href="class.html"><span class="glyphicon glyphicon-list-alt"></span>分类</a></li>
+			<li role="button" class=""><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a></li>
+			<li role="button" class=""><a href="#"><span class="glyphicon glyphicon-user"></span>个人中心</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

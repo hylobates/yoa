@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 800px;
+			height: 1200px;
+			background-color: #df6;
+		}
+		.mian{
+			border: 1px solid #000;
+			height: 200px;
+			width: 50%;
+		}
+	</style>
+	<script type="text/javascript" src="libs/plugin/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="libs/plugin/jquery_lazyload/jquery.lazyload.min.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="mian">
+			<a href="#">132456</a>
+		</div>
+	</div>
+	<!-- <img class="lazy" alt="" width="640" height="480" data-original="libs/images/1.jpg" src="libs/imagesa/2.jpg" alt="">
+	<img src="" alt=""> -->
+	<img class="lazy" src="libs/images/loading/1392662628672.gif" data-original="libs/images/1.jpg" width="640" height="480" style="border:1px solid #000" alt="">
+	<script type="text/javascript">
+		window.setTimeout(function(){
+			// $("img.lazy").lazyload({
+		 //  	  event : "click"
+			// });
+		// 	$("img.lazy").lazyload({
+		// 		container:$("#select"),
+		// 		event : "click",
+		// 		effect : "fadeIn",
+		// 		effectspeed:2000
+		// 	});
+		// },2000)
+	var imgs = document.getElementsByTagName('img');
+	// 获取视口高度与滚动条的偏移量
+	function lazyload(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+		var viewportSize = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		for(var i=0; i<imgs.length; i++) {
+			var x =scrollTop+viewportSize-imgs[i].offsetTop;
+			if(x>0){
+				imgs[i].src = imgs[i].getAttribute('loadpic');   
+			}
+		}
+	}
+	setInterval(lazyload,1000);
+		
+	//
+	// var imgs = document.getElementsByTagName('img');
+	(function ($) {
+		$.lazy = function () {
+			var imgs = document.getElementsByTagName('img');
+			var lazy = [];
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			var viewportSize = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+			for(var i = 0; i<imgs.length; i++){
+				if (imgs[i].getAttribute("class") === "lazy") {
+					lazy.push(this);
+				}
+			}
+			for(var j = 0; j<lazy.length; j++){
+				var x = scrollTop + viewportSize - lazy[i].offsetTop;
+				if (x>0) {
+					lazy[i].src = lazy[i].getAttribute('data-original');
+				}
+			}			
+		}
+	})(jQuery);
+	$.lazy();
+	</script>
+</body>
+</html>
